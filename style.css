@@ -132,7 +132,7 @@ body {
 
 /* Main */
 main .card {
-  padding: 1.5em;
+  padding: 2em;
   display: flex;
   flex-direction: column;
   margin: 1em;
