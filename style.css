@@ -3,9 +3,13 @@
   --clr-primary-200: hsl(217, 19%, 35%);
   --clr-primary-300: hsl(219, 29%, 14%);
   --clr-primary-400: hsl(0, 0%, 100%);
+  --clr-primary-500: hsl(263, 77%, 69%);
+
+  --clr-opacity-100: hsl(263, 55%, 52%, 0.5);
 
   --clr-neutral-100: hsl(0, 0%, 81%);
   --clr-neutral-200: hsl(210, 46%, 95%);
+  --clr-neutral-300: hsl(213, 44%, 95%);
 
   --fw-regular: 500;
   --fw-bold: 600;
@@ -14,6 +18,7 @@
 
   --fs-small: 0.813rem;
   --fs-regular: 1rem;
+  --fs-large: 1.2rem;
 }
 
 @media (min-width: 50em) {
@@ -25,6 +30,78 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.clr-opacity-100 {
+  color: var(--clr-opacity-100);
+}
+
+.clr-primary-100 {
+  color: var(--clr-primary-100);
+}
+
+.clr-primary-200 {
+  color: var(--clr-primary-200);
+}
+
+.clr-primary-300 {
+  color: var(--clr-primary-300);
+}
+
+.clr-primary-400 {
+  color: var(--clr-primary-400);
+}
+
+.clr-primary-500 {
+  color: var(--clr-primary-500);
+}
+
+.clr-neutral-100 {
+  color: var(--clr-neutral-100);
+}
+
+.clr-neutral-200 {
+  color: var(--clr-neutral-200);
+}
+
+.clr-neutral-300 {
+  color: var(--clr-neutral-300);
+}
+
+.bg-opacity-100 {
+  background-color: var(--clr-opacity-100);
+}
+
+.bg-primary-100 {
+  background-color: var(--clr-primary-100);
+}
+
+.bg-primary-200 {
+  background-color: var(--clr-primary-200);
+}
+
+.bg-primary-300 {
+  background-color: var(--clr-primary-300);
+}
+
+.bg-primary-400 {
+  background-color: var(--clr-primary-400);
+}
+
+.bg-primary-500 {
+  background-color: var(--clr-primary-500);
+}
+
+.bg-neutral-100 {
+  background-color: var(--clr-neutral-100);
+}
+
+.bg-neutral-200 {
+  background-color: var(--clr-neutral-200);
+}
+
+.bg-neutral-300 {
+  background-color: var(--clr-neutral-300);
 }
 
 .ff-primary {
@@ -46,12 +123,42 @@
   font-size: var(--fs-regular);
 }
 
+.fs-large {
+  font-size: var(--fs-large);
+}
+
+body {
+}
+
+/* Main */
+main .card {
+  padding: 1.5em;
+  display: flex;
+  flex-direction: column;
+  margin: 1em;
+  border-radius: 10px;
+}
+
+main .card__header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+main .card__header img {
+  border-radius: 50%;
+  border: solid var(--clr-primary-500) 2px;
+  width: 32px;
+  height: 32px;
+  margin-right: 1em;
+}
+
+main h3 {
+  margin-bottom: 1em;
+}
+
 /* - Mobile: 375px
 - Desktop: 1440px */
 
 /* 1. "Verified Graduate" has the same color as the person's name with 50% opacity
 2. Review paragraphs inside the quotations have the same color as well, but are at 70% opacity */
-
-/* ### Body Copy
-
-- Font size: 13px */
